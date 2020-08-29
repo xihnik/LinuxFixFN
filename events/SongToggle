@@ -1,3 +1,2 @@
-# Pass all events to our one handler script
 event=cd/play CDPLAY 00000080
 action=/etc/acpi/SongToggle.sh %e
