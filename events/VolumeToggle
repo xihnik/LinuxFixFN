@@ -1,0 +1,3 @@
+# Pass all events to our one handler script
+event=button/mute (MUTE|HOTK) 00000080
+action=/etc/acpi/VolumeToggle.sh %e

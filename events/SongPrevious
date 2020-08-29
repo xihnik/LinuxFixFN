@@ -1,0 +1,3 @@
+# Pass all events to our one handler script
+event=cd/prev CDPREV 00000080
+action=/etc/acpi/SongPrevious.sh %e
