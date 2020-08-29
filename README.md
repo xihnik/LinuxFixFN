@@ -23,7 +23,7 @@ FN клавишы, которые у меня есть:
 
 Пункты 11 и 12 начинают работать после выхода из ждущего режима (suspend) :/
 
-Решение:
+Решение для Arch Linux:
 1. pamac install acpid acpi-support acpi acpitool
 2. systemctl start acpid.service
 3. systemctl enable acpid.service
@@ -97,8 +97,7 @@ cd/next CDNEXT 00000080 00000000 K
 7. Выполните в папке git clone https://github.com/xihnik/LinuxFixFN.git
 8. Откройте конфиг /etc/acpi/acpi-config
 9. Измените в нем your_user на название вашего пользователя.
-10.1 Перезапустите ноутбук/ПК и все должно заработать
-10.2 Можно и этой командой перезапустить контроллер отвечающий за FN клавиши: systemctl disable acpid.service && systemctl enable acpid.service
+10. Перезапустите ноутбук/ПК и все должно заработать или можно этой командой перезапустить контроллер отвечающий за FN клавиши: systemctl disable acpid.service && systemctl enable acpid.service
 
 Если из того, что у вас не работает что либо или хоите добавить свои клавиши, тогда краткий экскурс:
 Зайдите в папку  /etc/acpi/ в этой папке лежат bash скрипты, которые выполняются при нажатии на FN+F1(1..12). Зайдите в папку /etc/acpi/events/ в этой папке лежат конфиги, которые и отвечают за вызов скриптов.
@@ -147,4 +146,5 @@ fi
 ```
 
 *Здесь мы описали, что произойдет при вызове FN+F1
+
 10.Перезапустите ноутбук/ПК и все должно заработать хотя можно и этой командой перезапустить контроллер отвечающий за FN клавиши: systemctl disable acpid.service && systemctl enable acpid.service
