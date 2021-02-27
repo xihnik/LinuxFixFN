@@ -71,7 +71,7 @@ action =/etc/acpi/VolumeToggle.sh% e
 8. Open it with an editor
 9. And add the following:
 
-`` bash
+``` bash
 #!/bin/bash
 # Turn off/turn on sound
 
@@ -92,7 +92,7 @@ else
   sudo -u $ user amixer cset numid = 4 off
   sudo -u $ user DISPLAY =: 0 DBUS_SESSION_BUS_ADDRESS = unix: path =/run/user/1000/bus notify-send "Sound off"
 fi
-``
+```
 
 * Here we have described what happens when you call FN + F1
 
